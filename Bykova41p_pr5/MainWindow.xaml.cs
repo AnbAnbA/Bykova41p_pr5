@@ -33,16 +33,19 @@ namespace Bykova41p_pr5
             Bresult.Visibility=Visibility.Visible;
             CBDrev.IsEnabled = true;
             TBlResult.Text = "";
+
         }
 
         private void RBJapan_Checked(object sender, RoutedEventArgs e)
         {
             SPYear.Visibility = Visibility.Visible;
-            SPDrev.Visibility = Visibility.Visible;
+            SPDrev.Visibility = Visibility.Collapsed;
             CBDrev.Visibility = Visibility.Collapsed;
             Bresult.Visibility = Visibility.Visible;
+            SPDay.Visibility = Visibility.Collapsed;
             SPYear.IsEnabled = true;
             TBlResult.Text = "";
+            TBYear.Text = "";
         }
 
 
